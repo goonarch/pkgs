@@ -1,0 +1,13 @@
+bemoji
+catppuccin-cursors-mocha
+catppuccin-gtk-theme
+kvantum-theme-catppuccin-git
+paru
+pfetch
+picom-arian8j2-git
+pywal-16-colors
+nwg-launchers
+nwg-look-bin
+python-haishoku
+swww
+ttf-twemoji-color
