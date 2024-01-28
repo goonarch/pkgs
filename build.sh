@@ -24,6 +24,13 @@ fi
 
 PKGS=$(/bin/cat pkgs.txt)
 
+echo "Removing old packages"
+cd $REPO_DIR
+rm *.xz
+
+cd $ROOT_DIR
+
+
 cd $BUILD_DIR
 echo "Building packages"
 sudo echo "Got sudo"
@@ -36,7 +43,7 @@ for pkg in $PKGS; do
 	cd $pkg
     fi
 
-    PKGDEST="$REPO_DIR" makepkg --config $ROOT_DIR/makepkg.conf -s --noconfirm
+    PKGDEST="$REPO_DIR" makepkg -s --config $ROOT_DIR/makepkg.conf --noconfirm
     cd $BUILD_DIR
 done
 
